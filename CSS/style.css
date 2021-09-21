@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+html{
+    font-size: 100%;
+}
+body{
+    color:#383e45;
+    font-size: 0.9rem;
+}
+a{
+    /* リンクに下線が表示されない設定 */
+  text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+li{
+    list-style: none;
+}
+
+/*
+line-height にh1タグの高さよりも小さい値「1px」を指定することで、
+h1タグの上下の余白が消えるため、ロゴ画像の高さと揃う
+「line-height: 0;」を指定してもOK
+*/
+.site-title{
+    width: 120px;
+    line-height: 0;
+    padding: 10px 0;
+}
+.site-title a {
+    display: block;
+}
+
+/*h2タグ*/
+.section-title{
+    display: inline-block;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 60px;
+    border-bottom: solid 1px #383e45;
+}
+/*h3タグ*/
+.content-title{
+font-size: 1rem;
+margin: 10px 0;
+}
+
+.wrapper{
+    max-width: 960px;
+    margin: 0 auto 100px auto;
+    padding: 0 4%;
+    text-align: center;
+}
