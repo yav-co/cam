@@ -92,3 +92,40 @@ margin: 10px 0;
     }
 }
 
+#about .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+#about .text{
+    text-align: left;
+}
+
+@media screen and (max-width:600px){
+    #about .content{
+        flex-direction: column; /* 画像とテキストを縦並びに配置します */
+    }
+    #about img{
+        margin-right: 0;
+    }
+}
+
+#photos ul{
+    display: flex; /* 横並び */
+    justify-content: space-between; /* 両端揃え */
+}
+#photos li{
+    width: 32%;
+}
+
+#footer{
+    font-size: 0.5rem;
+    padding: 10px 0;
+    text-align: center;
+}
